@@ -1,2 +1,4 @@
 using Windows.Wdk.Foundation;
 using Windows.Wdk.System.SystemServices;
+using Windows.Wdk.Networking.Tdi;
+using Windows.Wdk.Storage.FileSystem;

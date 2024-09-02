@@ -1,0 +1,5 @@
+--traverse
+<IncludeRoot>/shared/tdi.h
+<IncludeRoot>/shared/ntddtdi.h
+--namespace
+Windows.Wdk.Networking.Tdi
