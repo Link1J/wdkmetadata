@@ -200,6 +200,176 @@
           "parameter": "Flags"
         }
       ]
+    },
+    {
+      "namespace": "Windows.Wdk.Storage.FileSystem.NetworkRedirector",
+      "flags": false,
+      "name": "NODE_TYPE_CODE",
+      "type": "ushort",
+      "members": [
+        {
+          "name": "NTC_UNDEFINED",
+          "value": "0x0000"
+        },
+        {
+          "name": "RDBSS_NTC_STORAGE_TYPE_UNKNOWN",
+          "value": "0xec00"
+        },
+        {
+          "name": "RDBSS_NTC_STORAGE_TYPE_DIRECTORY",
+          "value": "0xec02"
+        },
+        {
+          "name": "RDBSS_NTC_STORAGE_TYPE_FILE",
+          "value": "0xec03"
+        },
+        {
+          "name": "RDBSS_NTC_OPENTARGETDIR_FCB",
+          "value": "0xecff"
+        },
+        {
+          "name": "RDBSS_NTC_IPC_SHARE",
+          "value": "0xecfe"
+        },
+        {
+          "name": "RDBSS_NTC_MAILSLOT",
+          "value": "0xecfd"
+        },
+        {
+          "name": "RDBSS_NTC_SPOOLFILE",
+          "value": "0xecfc"
+        },
+        {
+          "name": "RDBSS_NTC_SRVCALL",
+          "value": "0xeb10"
+        },
+        {
+          "name": "RDBSS_NTC_NETROOT",
+          "value": "0xeb11"
+        },
+        {
+          "name": "RDBSS_NTC_V_NETROOT",
+          "value": "0xeb12"
+        },
+        {
+          "name": "RDBSS_NTC_VOLUME_FCB",
+          "value": "0xeb1f"
+        },
+        {
+          "name": "RDBSS_NTC_SRVOPEN",
+          "value": "0xeb1c"
+        },
+        {
+          "name": "RDBSS_NTC_INTERNAL_SRVOPEN",
+          "value": "0xeb1d"
+        },
+        {
+          "name": "RDBSS_NTC_DEVICE_FCB",
+          "value": "0xeb9a"
+        },
+        {
+          "name": "RDBSS_NTC_DATA_HEADER",
+          "value": "0xeb00"
+        },
+        {
+          "name": "RDBSS_NTC_VCB",
+          "value": "0xeb01"
+        },
+        {
+          "name": "RDBSS_NTC_FOBX",
+          "value": "0xeb07"
+        },
+        {
+          "name": "RDBSS_NTC_RX_CONTEXT",
+          "value": "0xeb08"
+        },
+        {
+          "name": "RDBSS_NTC_PREFIX_TABLE",
+          "value": "0xeb0d"
+        },
+        {
+          "name": "RDBSS_NTC_PREFIX_ENTRY",
+          "value": "0xeb0e"
+        },
+        {
+          "name": "RDBSS_NTC_FCB_TABLE",
+          "value": "0xeb09"
+        },
+        {
+          "name": "RDBSS_NTC_FCB_TABLE_ENTRY",
+          "value": "0xeb0a"
+        },
+        {
+          "name": "RDBSS_NTC_RXCE_TRANSPORT",
+          "value": "0xeb71"
+        },
+        {
+          "name": "RDBSS_NTC_RXCE_ADDRESS",
+          "value": "0xeb72"
+        },
+        {
+          "name": "RDBSS_NTC_RXCE_CONNECTION",
+          "value": "0xeb73"
+        },
+        {
+          "name": "RDBSS_NTC_RXCE_VC",
+          "value": "0xeb74"
+        },
+        {
+          "name": "RDBSS_NTC_NONPAGED_FCB",
+          "value": "0xebfd"
+        },
+        {
+          "name": "RDBSS_NTC_COMMON_DISPATCH",
+          "value": "0xebfe"
+        },
+        {
+          "name": "RDBSS_NTC_MINIRDR_DISPATCH",
+          "value": "0xebff"
+        },
+        {
+          "name": "RDBSS_NTC_FCB",
+          "value": "0xec03"
+        }
+      ],
+      "uses": [
+        {
+          "struct": "MINIRDR_DISPATCH",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_NON_PAGED_FCB",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_RX_FCB_TABLE_ENTRY",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_RX_FCB_TABLE",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_NODE_TYPE_CODE_AND_SIZE_NO_REFCOUNT",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_RX_PREFIX_ENTRY",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_RX_PREFIX_TABLE",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_RX_CONTEXT",
+          "field": "NodeTypeCode"
+        },
+        {
+          "struct": "_RDBSS_DATA",
+          "field": "NodeTypeCode"
+        }
+      ]
     }
   ]
 }
